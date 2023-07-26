@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind and daisy ui cdn -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Open+Sans:wght@700;800&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500&family=Work+Sans:wght@600&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Custom css -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+    <!-- Custom tailwind -->
+</head>
+
+<body>
+    <!-- Navbar section -->
+
+    <header class="container mx-auto">
+
+        <div class="navbar md:bg-[#F85559] rounded-full  md:text-white  flex-row-reverse lg:flex-row my-7 px-8">
+            <div class="navbar-start md:justify-end justify-end lg:justify-start">
+
+                <div class="dropdown">
+
+                    <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+
+                    <!-- right side drop -->
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
+                <!-- left side large -->
+                <ul class="menu menu-horizontal hidden lg:flex px-0">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <!-- Scearch bar -->
+            <div class="navbar-center">
+                <img src="images/logo.png" class="h-12">
+                <a class="btn btn-ghost normal-case text-3xl">Fruit Burst</a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <div class="form-control relative">
+                    <input type="text" placeholder="Search here"
+                        class="input px-16  lg:w-auto rounded-full text-slate-950 " />
+                    <img src="images/Frame.svg" class="absolute w-6 mx-64 my-3">
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+    </header>
+
+
+
+
+
+
+</body>
+
+</html>
